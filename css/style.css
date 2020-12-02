@@ -1,0 +1,64 @@
+header {
+  text-align: center;
+}
+
+h2 {
+  font-size: 50px;
+  border: solid black 5px;
+  background-color: rgb(255, 196, 0);
+  padding: 10px;
+  margin: 50px 25px 50px 25px;
+}
+
+h3 {
+  font-size: 30px;
+  margin: 10px 10px 10px 10px;
+  padding: 10px;
+  color: rgb(10, 10, 82);
+}
+
+p {
+  padding: 10px;
+  margin: 5px 5px 5px 5px;
+}
+
+ul {
+  display: block;
+  list-style: disc outside none;
+  margin: 1em 0;
+  padding: 0 0 0 40px;
+}
+
+#edu {
+  float: left;
+  margin: auto;
+  margin-left: 25px;
+  width: auto;
+  padding-bottom: 165px;
+}
+
+#work {
+  float: right;
+  margin: auto;
+  margin-right: 25px;
+  width: auto;
+}
+
+#goals {
+  float: left;
+  margin: auto;
+  margin-left: 15%;
+  width: auto;
+}
+
+section {
+  border: solid 3px black;
+  padding: 50px;
+  margin: 25px;
+  background-color: rgb(19, 218, 208);
+}
+
+footer {
+  margin: auto;
+  margin-top: 400px;
+}
