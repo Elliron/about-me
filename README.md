@@ -22,3 +22,4 @@ Jason Quaglia
 Anthony Hayward
 Carly Dekock
 Lauren Sierra
+**TA** Ron Dunphy

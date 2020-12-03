@@ -29,25 +29,37 @@ ul {
   padding: 0 0 0 40px;
 }
 
+ol {
+  display: block;
+  list-style: decimal;
+  margin: 1em 0;
+  padding: 0 0 0 40px;
+}
+
 #edu {
-  float: left;
-  margin: auto;
-  margin-left: 25px;
-  width: auto;
+  /* float: left; */
+  display: inline-block;
+  /* margin: auto;
+  margin-left: 25px; */
+  /* width: auto; */
   padding-bottom: 165px;
 }
 
 #work {
-  float: right;
-  margin: auto;
-  margin-right: 25px;
-  width: auto;
+  /* float: right; */
+  /* margin: auto;
+  margin-right: 25px; */
+  /* width: auto; */
 }
 
 #goals {
-  float: left;
-  margin: auto;
-  margin-left: 15%;
+  /* float: left; */
+  /* margin: auto;
+  margin-left: 15%; */
+  /* width: auto; */
+}
+
+#bio {
   width: auto;
 }
 
@@ -56,6 +68,13 @@ section {
   padding: 50px;
   margin: 25px;
   background-color: rgb(19, 218, 208);
+  height: 300px;
+  width: 500px;
+
+}
+
+.inblock {
+  display: inline-block;
 }
 
 footer {

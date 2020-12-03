@@ -5,7 +5,6 @@ var userName = prompt('Choose your name');
 // console.log(userName);
 alert('Hiya ' + userName + ' I hope you studied.');
 
-
 var game = prompt('Do you want to play a game? yes or no').toLowerCase();
 // console.log(game);
 if (game === 'yes' || game === 'y') {
@@ -52,5 +51,42 @@ if (quest4 === 'yes' || quest4 === 'y') {
   alert('...');
 }
 
+// question 6
+var attempts = 4;
+var quest6Ans = 8;
+for (var i = 0; i < attempts; i++) {
+  var quest6 = parseInt(prompt('Guess a number between 1 and 10.'));
+  if (quest6 === quest6Ans) {
+    alert('Good Job');
+    break;
+  } else if (quest6 > quest6Ans && i !== 3) {
+    alert('Too High');
+  } else if (quest6 < quest6Ans && i !== 3) {
+    alert('Too Low');
+  } else {
+    alert('Game Over');
+  }
+}
 
-alert('Thank\'s ' + userName + ', for taking an interest in my journey and playing my game.');
+// question 7
+
+var food = ['sushi', 'pizza', 'drunken noodle', 'ramen'];
+console.log(food);
+loop1: for (var i = 0; i < 6; i++) {
+  var quest7 = prompt('What are my favorite foods?').toLowerCase();
+  // console.log('food[j]', food[j]);
+  // console.log('quest7', quest7);
+  for (var j = 0; j < food.length; j++) {
+    if (quest7 === food[j]) {
+      alert('Good Job');
+      break loop1;
+    }
+    else if (quest7 !== food[j]) {
+      alert('sorry, try again');
+      break;
+    }
+  }
+}
+alert(`The correct answers are ${food}`);
+
+alert(`Thank's ${userName}, for taking an interest in my journey and playing my game.`);
