@@ -20,11 +20,17 @@ h3 {
 p {
   padding: 10px;
   margin: 5px 5px 5px 5px;
+  font-size: 25px;
+}
+
+li {
+  font-size: 20px;
 }
 
 ul {
   display: block;
-  list-style: disc outside none;
+  list-style: disc;
+  list-style-position: inside;
   margin: 1em 0;
   padding: 0 0 0 40px;
 }
@@ -36,48 +42,37 @@ ol {
   padding: 0 0 0 40px;
 }
 
-#edu {
-  /* float: left; */
-  display: inline-block;
-  /* margin: auto;
-  margin-left: 25px; */
-  /* width: auto; */
-  padding-bottom: 165px;
-}
-
-#work {
-  /* float: right; */
-  /* margin: auto;
-  margin-right: 25px; */
-  /* width: auto; */
-}
-
-#goals {
-  /* float: left; */
-  /* margin: auto;
-  margin-left: 15%; */
-  /* width: auto; */
-}
-
 #bio {
   width: auto;
 }
 
-section {
-  border: solid 3px black;
-  padding: 50px;
-  margin: 25px;
-  background-color: rgb(19, 218, 208);
+#topTen {
+  width: 400px;
   height: 300px;
-  width: 500px;
-
 }
 
-.inblock {
-  display: inline-block;
+section {
+  border: 50px solid rgb(21, 68, 221);
+  background-color: rgb(24, 224, 131);
+  width: auto;
+  margin: auto;
+  margin-top: 50px;
+  height: 300px;
+  padding: 20px;
+  border-radius: 50px;
 }
-
+section:hover{
+  background-color: red;
+}
 footer {
   margin: auto;
   margin-top: 400px;
+}
+
+div section {
+  display: inline-block;
+  left: 50x;
+  margin: 40px;
+  width: 400px;
+  height: 250px;
 }

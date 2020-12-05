@@ -1,9 +1,12 @@
 'use strict';
 
+// global variables
+var totalAnswer = 0;
+
 alert('Welcome to the greatest page you will ever see!!!');
 var userName = prompt('Choose your name');
 // console.log(userName);
-// var totalAnswer = 0;
+
 
 alert('Hiya ' + userName + ' I hope you studied.');
 
@@ -13,13 +16,13 @@ function qOne() {
   // console.log(questOne);
   if (questOne === 'yes' || questOne === 'y') {
     // console.log('Very well, ' + userName + ' answered ' + questOne + ' to playing a game');
-    // totalAnswer++;
+    totalAnswer++;
     alert('Let\'s have some fun!');
   } else {
     alert('Too bad, Haha!');
   }
 }
-qOne();
+
 
 //question 2
 function qTwo() {
@@ -27,13 +30,13 @@ function qTwo() {
   // console.log(questTwo);
   if (questTwo === 'yes' || questTwo === 'y') {
     // console.log(userName + ' answered ' + questTwo + ' to question 1');
-    // totalAnswer++;
+    totalAnswer++;
     alert('That was an easy one.');
   } else {
     alert('Wrong! Haha');
   }
 }
-qTwo();
+
 
 
 // //question 3
@@ -42,13 +45,13 @@ function qThree() {
   // console.log(questThree);
   if (questThree === 'no' || questThree === 'n') {
     // console.log(userName + ' answered ' + questThree + ' question 2');
-    // totalAnswer++;
+    totalAnswer++;
     alert('Good Job.');
   } else {
     alert('Better luck next time');
   }
 }
-qThree();
+
 
 // question 4 y/n
 function qFour() {
@@ -56,27 +59,25 @@ function qFour() {
   // console.log(questFour);
   if (questFour === 'no' || questFour === 'n') {
     // console.log(userName + ' answered ' + quest3 + ' to question 3');
-    // totalAnswer++;
+    totalAnswer++;
     alert('Sadly I dont, but hopefully soon.');
   } else {
     alert('Just rub salt in the wound, I will have them soon though!');
   }
 }
-qFour();
 
 //question 5
 function qFive() {
-  var questFive = prompt('Is Lauren the Best? yes or no, but mostly yes');
+  var questFive = prompt('Is Lauren the Best? yes or no, but mostly yes').toLowerCase();
   // console.log(questFive);
   if (questFive === 'yes' || questFive === 'y') {
     // console.log(userName + ' answered ' + questFive + ' to question 4');
-    // totalAnswer++;
+    totalAnswer++;
     alert('You have good taste!');
   } else {
     alert('...');
   }
 }
-qFive();
 
 // question 6
 function qSix() {
@@ -85,7 +86,7 @@ function qSix() {
   for (var i = 0; i < attempts; i++) {
     var quest6 = parseInt(prompt('Guess a number between 1 and 10.'));
     if (quest6 === questSixAns) {
-      // totalAnswer++;
+      totalAnswer++;
       alert('Good Job');
       break;
     } else if (quest6 > questSixAns && i !== 3) {
@@ -97,31 +98,42 @@ function qSix() {
     }
   }
 }
+// question 7
+function qSeven() {
+  var food = ['sushi', 'pizza', 'drunken noodle', 'ramen'];
+  var attempts = 0;
+  var guesses = 6;
+  var notAnsweredCorrectly = true;
+  console.log(food);
+  while(notAnsweredCorrectly && attempts <= guesses) {
+    attempts++;
+    var questSeven = prompt('What are my favorite foods?');
+    for (var j = 0; j < food.length; j++) {
+      if (questSeven === food[j]) {
+        totalAnswer++;
+        alert('Good Job');
+        notAnsweredCorrectly = false;
+        break;
+      }
+    } if (notAnsweredCorrectly) {
+      alert('Sorry try again');
+    }
+  }
+}
+
+function thankTotal() {
+  alert(`Thank's ${userName}, for taking an interest in my journey and playing my game. you answered ${totalAnswer} correct.`);
+}
+
+
+//function call
+
+qOne();
+qTwo();
+qThree();
+qFour();
+qFive();
 qSix();
+qSeven();
+thankTotal();
 
-// // question 7
-
-// var food = ['sushi', 'pizza', 'drunken noodle', 'ramen'];
-// var questSevenAttempts = 6
-// var answeredCorrectly = false;
-// console.log(food);
-// While (!answeredCorrectly && questSevenAttempts > 0); {
-//   var questSeven = prompt('What are my favorite foods?').toLowerCase();
-//   // console.log('food[j]', food[j]);
-//   // console.log('quest7', quest7);
-//   for (var j = 0; j < food.length; j++) {
-//     if (questSeven === food[j]) {
-//       totalAnswer++;
-//       alert('Good Job');
-//       if !answeredCorrectly = false;
-//       break;
-//     }
-//     else if (questSeven !== food[j]) {
-//       alert('sorry, try again')
-//       break;
-//     }
-//   }
-// }
-// alert(`The correct answers are ${food}, you answered ${totalAnswer} correct.`);
-
-// alert(`Thank's ${userName}, for taking an interest in my journey and playing my game.`);
